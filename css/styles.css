@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+.container-fluid {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#title {
+  background-color: #d9d9d9;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+/* Information Buttons and H6 */
+.col-lg-6 h6 {
+  padding: 15px 0;
+}
+.android,
+.apple {
+  margin: 5% 3% 5% 0;
+}
+
+#bannerimg {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+#features .container {
+  padding: 0 10%;
+}
+
+#features .col-lg-4 {
+  margin: 15% 0;
+  text-align: center;
+}
+
+#features i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: pink;
+  transition: 0.5s;
+}
+#features i:hover {
+  font-size: 3rem;
+  color: black;
+}
+#features h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#features p {
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Testimonial Section */
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #181818;
+  color: #fff;
+}
+.testimonialimg {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
