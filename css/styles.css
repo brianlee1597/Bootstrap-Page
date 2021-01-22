@@ -2,10 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 .container-fluid {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 3% 15% 7%;
 }
 #title {
   background-color: #d9d9d9;
@@ -20,7 +17,7 @@ h1 {
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4vw;
   line-height: 1.5;
 }
 
@@ -54,6 +51,25 @@ h2 {
   width: 90%;
   margin-top: 10px;
   margin-left: 10%;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 1000px) {
+  #title {
+    text-align: center;
+  }
+  #bannerimg {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 12.5%;
+    position: static;
+    margin-bottom: -10%;
+  }
+}
+#features {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
 }
 
 #features .container {
@@ -89,7 +105,6 @@ h2 {
 
 /* Testimonial Section */
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #181818;
   color: #fff;
@@ -98,4 +113,69 @@ h2 {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #b3b3b3;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-logo {
+  width: 15%;
+  margin: 100px 20px 50px;
+}
+#press h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding-top: 100px;
+  color: #fff;
+}
+#press h3 span {
+  color: #66ff00;
+}
+
+/* Pricing */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.card-button {
+  width: 100%;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call To Action */
+
+#cta {
+  padding: 7% 15%;
+  text-align: center;
+}
+.cta-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-bottom: 5%;
+}
+#info {
+  margin: 0 20px;
+}
+
+/* Footer Section */
+#footer {
+  text-align: center;
+  padding: 3% 15%;
+}
+#contact {
+  margin: 20px 10px;
+  color: black;
+}
+#contact:hover {
+  margin: 20px 10px;
+  color: lightblue;
 }
