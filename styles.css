@@ -1,27 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-#title {
-  background-color: #d9d9d9;
-}
-h1 {
+body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.big-heading {
   font-weight: 900;
   font-size: 3rem;
   line-height: 1.5;
 }
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 4vw;
-  line-height: 1.5;
+.repeatedpadding {
+  padding: 7% 15%;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Start*/
 .navbar {
   padding: 0 0 4.5rem;
 }
@@ -30,23 +23,54 @@ h2 {
   font-size: 2rem;
   font-weight: 400;
 }
+.navbar-toggler,
+.navbar-toggler-icon {
+  outline: none !important;
+}
 .nav-item {
   padding: 0 18px;
 }
 .nav-link {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  transition: 0.5s;
 }
+.nav-link:hover {
+  border-radius: 10px;
+  color: solid black !important;
+  border-bottom: 1px solid black !important;
+}
+@media (max-width: 400px) {
+  .navbar {
+    padding: 1rem 0 4.5rem;
+  }
+  .navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+/* Navigation Bar End*/
 
-/* Information Buttons and H6 */
-.col-lg-6 h6 {
+/* Title Section Start */
+#title {
+  text-align: left;
+  background-color: #d9d9d9;
+}
+#titlecontainer {
+  padding: 3% 15% 7%;
+}
+@media (max-width: 400px) {
+  #titlecontainer {
+    padding: 3% 10% 7%;
+  }
+}
+#bannerinfo {
   padding: 15px 0;
 }
-.android,
-.apple {
+.android-button,
+.apple-button {
   margin: 5% 3% 5% 0;
 }
-
 #bannerimg {
   width: 90%;
   margin-top: 10px;
@@ -66,6 +90,9 @@ h2 {
     margin-bottom: -10%;
   }
 }
+/* Title Section End */
+
+/* Features Section Start */
 #features {
   position: relative;
   background-color: #fff;
@@ -78,7 +105,6 @@ h2 {
 
 #features .col-lg-4 {
   margin: 15% 0;
-  text-align: center;
 }
 
 #features i {
@@ -92,36 +118,36 @@ h2 {
   color: black;
 }
 #features h3 {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 #features p {
   padding: 0 20px;
-  font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
 }
+/* Features Section End */
 
-/* Testimonial Section */
+/* Testimonial Section Start */
 #testimonials {
-  text-align: center;
   background-color: #181818;
   color: #fff;
+}
+.testimonial-text {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 .testimonialimg {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
 }
+/* Testimonial Section End */
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
+/* Press Section Start */
 #press {
   background-color: #b3b3b3;
-  text-align: center;
   padding-bottom: 3%;
 }
 .press-logo {
@@ -129,7 +155,6 @@ h2 {
   margin: 100px 20px 50px;
 }
 #press h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   padding-top: 100px;
@@ -138,11 +163,23 @@ h2 {
 #press h3 span {
   color: #66ff00;
 }
+/* Press Section End */
 
-/* Pricing */
+/* Pricing Section Start*/
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+@media (max-width: 400px) {
+  #pricing {
+    padding: 100px 25px 100px;
+  }
+}
+#pricing h3 {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+#pricing h2 {
+  padding: 10px;
 }
 .card-button {
   width: 100%;
@@ -150,15 +187,10 @@ h2 {
 .pricing-column {
   padding: 3% 2%;
 }
+/* Pricing Section End*/
 
-/* Call To Action */
-
-#cta {
-  padding: 7% 15%;
-  text-align: center;
-}
+/* Call To Action Start*/
 .cta-heading {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   padding-bottom: 5%;
   opacity: 0.7;
@@ -166,10 +198,15 @@ h2 {
 #info {
   margin: 0 20px;
 }
+@media (max-width: 400px) {
+  #info {
+    margin: 10px 20px;
+  }
+}
+/* Call To Action End*/
 
-/* Footer Section */
+/* Footer Section Start*/
 #footer {
-  text-align: center;
   padding: 3% 15%;
 }
 #contact {
@@ -181,3 +218,4 @@ h2 {
   margin: 20px 10px;
   color: lightblue;
 }
+/* Footer Section End*/
